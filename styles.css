@@ -58,10 +58,21 @@ body {
     background-color: #0056b3;
 }
 
-.legacy-builds {
-    margin-top: 20px;
-    text-align: left;
+.legacy-builds .accordion {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
     width: 100%;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.legacy-builds .accordion:hover {
+    background-color: #0056b3;
 }
 
 .accordion {
