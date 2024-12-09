@@ -19,22 +19,26 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .logo img {
-    max-width: 1200px;
+    max-width: 100%;
+    height: auto;
     margin: 20px auto;
     display: block;
 }
 
 .video iframe {
-    width: 560px;
-    height: 315px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
     margin: 20px auto;
     display: block;
     border: none;
     border-radius: 8px;
+    aspect-ratio: 16 / 9;
 }
 
 .text p {
@@ -58,23 +62,7 @@ body {
     background-color: #0056b3;
 }
 
-.legacy-builds .accordion {
-    background-color: #007BFF;
-    color: white;
-    cursor: pointer;
-    padding: 10px 20px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-.legacy-builds .accordion:hover {
-    background-color: #0056b3;
-}
-
+.legacy-builds .accordion,
 .accordion {
     background-color: #007BFF;
     color: white;
@@ -88,7 +76,8 @@ body {
     margin-top: 10px;
 }
 
-.accordion:hover {
+.accordion:hover,
+.legacy-builds .accordion:hover {
     background-color: #0056b3;
 }
 
@@ -117,4 +106,45 @@ body {
 
 .panel a:hover {
     color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    .text p {
+        font-size: 14px;
+    }
+    .download a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .accordion,
+    .legacy-builds .accordion {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        max-width: 100%;
+        height: auto;
+    }
+    .video iframe {
+        width: 100%;
+        max-width: 560px;
+        height: auto;
+        margin: 20px auto;
+        display: block;
+        border: none;
+        border-radius: 8px;
+        aspect-ratio: 16 / 9;
+    }
+    .text p {
+        font-size: 12px;
+    }
+    .download a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
