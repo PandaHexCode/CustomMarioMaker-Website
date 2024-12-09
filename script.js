@@ -5,7 +5,7 @@ if (currentMonth === 11) {
     logoElement.src = 'logoWinter.png';
 }
 
-fetch('currentCMMVersion.txt')
+fetch('currentCMMVersion.txt?')
     .then(response => response.text())
     .then(version => {
         const downloadLink = document.getElementById('downloadLink');
