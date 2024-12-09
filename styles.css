@@ -16,11 +16,9 @@ body {
 .container {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8);
-    /* Weißer, transparenter Hintergrund für Inhalte */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Leichte Schatten für Eleganz */
 }
 
 .logo img {
@@ -58,4 +56,54 @@ body {
 
 .download a:hover {
     background-color: #0056b3;
+}
+
+.legacy-builds {
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.accordion {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.accordion:hover {
+    background-color: #0056b3;
+}
+
+.panel {
+    padding: 0 20px;
+    display: none;
+    overflow: hidden;
+    background-color: rgba(0, 123, 255, 0.1);
+    border-radius: 5px;
+}
+
+.panel ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.panel li {
+    margin: 5px 0;
+}
+
+.panel a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 14px;
+}
+
+.panel a:hover {
+    color: #0056b3;
 }
