@@ -25,10 +25,12 @@ body {
 }
 
 .logo img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     margin: 20px auto;
     display: block;
+    object-fit: contain;
+    max-height: 200px;
 }
 
 .video iframe {
@@ -63,7 +65,6 @@ body {
     background-color: #0056b3;
 }
 
-.legacy-builds .accordion,
 .accordion {
     background-color: #007BFF;
     color: white;
@@ -77,8 +78,7 @@ body {
     margin-top: 10px;
 }
 
-.accordion:hover,
-.legacy-builds .accordion:hover {
+.accordion:hover {
     background-color: #0056b3;
 }
 
@@ -90,55 +90,59 @@ body {
     border-radius: 5px;
 }
 
-.panel ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.panel li {
-    margin: 5px 0;
-}
-
-.panel a {
-    text-decoration: none;
-    color: #007BFF;
+.panel p {
     font-size: 14px;
+    color: #333;
+    margin: 10px 0;
 }
 
-.panel a:hover {
-    color: #0056b3;
+.discord a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5865F2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.discord a:hover {
+    background-color: #404EED;
 }
 
 @media (max-width: 768px) {
+    .logo img {
+        max-height: 150px;
+    }
     .container {
         padding: 15px;
     }
     .text p {
         font-size: 14px;
     }
-    .download a {
+    .download a,
+    .discord a {
         font-size: 14px;
         padding: 8px 16px;
     }
-    .accordion,
-    .legacy-builds .accordion {
+    .accordion {
         font-size: 14px;
     }
 }
 
 @media (max-width: 480px) {
     .logo img {
-        max-width: 100%;
-        height: auto;
+        max-height: 150px;
     }
     .video iframe {
-        max-width: 100%;
         height: 200px;
     }
     .text p {
         font-size: 12px;
     }
-    .download a {
+    .download a,
+    .discord a {
         font-size: 14px;
         padding: 8px 16px;
     }
@@ -153,13 +157,13 @@ body {
         width: 40%;
     }
     .video iframe {
-        max-width: 100%;
         height: 360px;
     }
     .text p {
         font-size: 18px;
     }
-    .download a {
+    .download a,
+    .discord a {
         font-size: 18px;
     }
 }

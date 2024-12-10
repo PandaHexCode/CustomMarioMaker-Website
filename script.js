@@ -1,4 +1,4 @@
-const currentMonth = new Date().getMonth(); // Get the current month (0 = January, 11 = December)
+const currentMonth = new Date().getMonth();
 const logoElement = document.getElementById('logo');
 
 if (currentMonth === 11) {
@@ -26,4 +26,4 @@ for (let i = 0; i < acc.length; i++) {
             panel.style.display = "block";
         }
     });
-}
+};
