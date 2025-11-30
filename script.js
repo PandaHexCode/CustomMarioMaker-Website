@@ -9,7 +9,7 @@ fetch('currentCMMVersion.txt?')
     .then(response => response.text())
     .then(version => {
         const downloadLink = document.getElementById('downloadLink');
-        downloadLink.innerHTML = `Download Alpha - ${version}`;
+        downloadLink.innerHTML = `Download Alpha - ${version} (BUGGY, I'm working on a reloaded Version currently, complete new code base)`;
     })
     .catch(error => {
         console.error('Error fetching version file:', error);
